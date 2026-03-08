@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://contest-calendar-project.vercel.app/'
+    'https://contest-calendar-project.vercel.app'
   ]
 }));
 
