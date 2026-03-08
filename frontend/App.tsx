@@ -207,14 +207,6 @@ const App: React.FC = () => {
           />
         )}
 
-        {/* Footer */}
-        <footer className={`mt-12 text-center text-xs ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-          <p>INSERT COIN TO CONTINUE</p>
-          <p className="mt-2">© 2024 PIXEL INC.</p>
-        </footer>
-
-      </div>
-
       {/* Modal Layer */}
       {selectedEvent && (
         <EventModal
