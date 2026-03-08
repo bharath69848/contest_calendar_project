@@ -206,6 +206,7 @@ const App: React.FC = () => {
             onEventClick={setSelectedEvent}
           />
         )}
+      </div>
 
       {/* Modal Layer */}
       {selectedEvent && (
