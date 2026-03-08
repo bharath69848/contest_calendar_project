@@ -116,14 +116,14 @@ const App: React.FC = () => {
               w-12 h-12 border-4 border-black flex items-center justify-center text-2xl
               ${darkMode ? 'bg-purple-600 text-white shadow-[4px_4px_0px_0px_#fff]' : 'bg-orange-400 text-white shadow-[4px_4px_0px_0px_#000]'}
             `}>
-              📅
+              
             </div>
             <div>
               <h1 className={`text-xl md:text-3xl font-bold ${darkMode ? 'text-white text-shadow-neon' : 'text-black'}`}>
                 CONTEST_CALENDAR
               </h1>
               <p className={`text-xs mt-1 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                v1.0.0 // READY PLAYER ONE
+                v1.0.0 
               </p>
             </div>
           </div>
