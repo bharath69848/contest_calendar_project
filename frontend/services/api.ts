@@ -1,7 +1,7 @@
 // API client for Contest Calendar backend
 // In development, calls go through the Vite proxy at /api → http://localhost:8000
 // In production, set VITE_API_URL to your hosted backend URL.
-const API_BASE = 'https://contest-calendar-project.onrender.com/'
+const API_BASE = 'https://contest-calendar-project.onrender.com'
 
 export interface BackendContestRow {
   id: number;
