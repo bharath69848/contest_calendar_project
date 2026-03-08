@@ -12,10 +12,12 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
-// Enable CORS for frontend requests. By default allow all origins, but
-// honor ALLOWED_ORIGIN env var when set (useful for production).
-const allowedOrigin = process.env.ALLOWED_ORIGIN || '*';
-app.use(cors({ origin: allowedOrigin }));
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://contest-calendar-project.vercel.app/'
+  ]
+}));
 
 app.get("/", (req, res) => {
   res.send("working daaa small boy");
