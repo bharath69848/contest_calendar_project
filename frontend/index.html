@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Pixel Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              pixel: ['"Press Start 2P"', 'cursive', 'monospace'],
+            },
+            colors: {
+              retro: {
+                dark: '#2d1b2e',
+                darkAccent: '#b45252',
+                light: '#e0d8c0',
+                lightAccent: '#8b7050',
+                leetcode: '#FFA116',
+                codeforces: '#1F8DFF',
+                codechef: '#5B4638',
+                atcoder: '#333333',
+              }
+            },
+            backgroundImage: {
+              'pixel-pattern': "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzjwqUAJIFcCJAxWQOXWAQBATGI859uEDQAAAABJRU5ErkJggg==')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Press Start 2P', monospace;
+        image-rendering: pixelated;
+      }
+      /* Custom Scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 12px;
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #555;
+        border: 2px solid #000;
+      }
+      .pixel-shadow-sm {
+        box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+      }
+      .pixel-shadow {
+        box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+      }
+      .pixel-inset {
+        box-shadow: inset 2px 2px 0px 0px rgba(0,0,0,0.2);
+      }
+      /* CRT Effect Overlay */
+      .scanlines {
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0),
+          rgba(255,255,255,0) 50%,
+          rgba(0,0,0,0.1) 50%,
+          rgba(0,0,0,0.1)
+        );
+        background-size: 100% 4px;
+        position: fixed;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 50;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "date-fns": "https://esm.sh/date-fns@^4.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
